@@ -1,0 +1,13 @@
+@mixin pad-1199
+ {
+    @media (max-width: 1199) {
+        @content
+    }
+};
+
+@mixin phone-767
+ {
+    @media (max-width: 767) {
+        @content
+    }
+};

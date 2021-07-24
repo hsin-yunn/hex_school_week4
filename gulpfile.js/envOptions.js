@@ -50,7 +50,7 @@ let envOptions = {
   },
   img: {
     src: [
-      `${srcPath}/assets/images/**/*`,
+      `${srcPath}/assets/assets/images/**/*`,
     ],
   },
   clean: {

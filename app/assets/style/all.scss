@@ -2,7 +2,11 @@
 @import 'reset';
 @import 'variables';
 
-@import 'header';
-@import 'footer';
+@import 'base';
+@import 'components';
+
+@import './layout/grid';
+@import './layout/header';
+@import './layout/footer';
 
 
