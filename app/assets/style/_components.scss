@@ -10,7 +10,7 @@
   padding: 80px 0 160px 0;
   max-width: 1110px;
   min-height: 40vh;
- @include pad-1199{
+  @include pad-1199 {
     max-width: 100%;
     padding: 56px 39px;
   }
@@ -19,7 +19,7 @@
   }
   &.location {
     padding: 96px 0 160px 0;
-   @include pad-1199{
+    @include pad-1199 {
       max-width: 100%;
       padding: 60px 30px 96px 39px;
     }
@@ -29,12 +29,60 @@
   }
   &.blog {
     padding: 40px 0 160px 0;
-   @include pad-1199{
+    @include pad-1199 {
       max-width: 100%;
       padding: 60px 30px 96px 39px;
     }
     @include phone-767 {
       padding: 28px 15px 56px 15px;
+    }
+  }
+}
+.multiple-main {
+  margin: 0 auto;
+  max-width: 1110px;
+  min-height: 40vh;
+  padding: 8px 40px 96px 40px;
+  @include pad-1199 {
+    padding: 8px 40px 96px 40px;
+    max-width: 100%;
+  }
+  @include phone-767 {
+    padding: 8px 15px 56px 15px;
+  }
+  .multiple-main__container {
+    @include flex;
+    flex-wrap: wrap;
+    .multiple-main__left {
+      width: 825px;
+      @include pad-1199 {
+        width: calc(100% - 209px);
+      }
+      @include phone-767 {
+        order: 1;
+        width: 100%;
+      }
+    }
+    .multiple-main__right {
+      @include auto_margin_left(30px);
+      width: 255px;
+      @include pad-1199 {
+        flex: 0 0 149px;
+        padding-right: 30px;
+      }
+      @include phone-767 {
+        @include auto_margin_top(30px);
+        flex: 0 0 100%;
+        order: 3;
+        margin-left: 0;
+        padding-right: 0;
+      }
+    }
+    .multiple-main__bottom {
+      width: 100%;
+      @include phone-767 {
+        order: 2;
+      }
     }
   }
 }
@@ -46,7 +94,7 @@
   flex-wrap: wrap;
   padding: 30px 88px;
   background-color: var(--red-500);
- @include pad-1199{
+  @include pad-1199 {
     padding: 30px 39px;
   }
   @include phone-767 {
@@ -112,7 +160,7 @@
     padding-top: 32px;
     width: 100%;
     border-top: 1px solid var(--white);
-   @include pad-1199{
+    @include pad-1199 {
       @include auto_margin_top(20px);
     }
     @include phone-767 {
@@ -144,7 +192,7 @@
   @include flex_align;
   .icon-list__item {
     @include auto_margin_left(32px);
-   @include pad-1199{
+    @include pad-1199 {
       @include auto_margin_left(24px);
     }
     a {
@@ -152,7 +200,7 @@
       color: var(--white);
       i {
         font-size: 3rem;
-       @include pad-1199{
+        @include pad-1199 {
           font-size: 1.5rem;
         }
       }
@@ -185,11 +233,12 @@
   }
   .text-list__item {
     @include auto_margin_left(64px);
-   @include pad-1199{
+    @include pad-1199 {
       @include auto_margin_left(40px);
     }
     a {
       display: block;
+      font-size: 1.25rem;
       color: var(--white);
       &:hover {
         @include ts(0.3);
@@ -204,11 +253,11 @@
     @include flex_align;
     @include auto_margin_top(16px);
     font-size: 2.25rem;
-   @include pad-1199{
+    @include pad-1199 {
       @include auto_margin_top(12px);
       font-size: 1.25rem;
     }
-   @include pad-1199{
+    @include pad-1199 {
       @include auto_margin_top(6px);
       font-size: 1rem;
     }
@@ -259,7 +308,7 @@
         width: 100%;
       }
     }
-   @include pad-1199{
+    @include pad-1199 {
       width: 230px;
       height: 60px;
     }
@@ -272,7 +321,7 @@
     }
     .switch-tabs__tab-icon {
       font-size: 2.75rem;
-     @include pad-1199{
+      @include pad-1199 {
         font-size: 2rem;
       }
       @include phone-767 {
@@ -284,7 +333,7 @@
     @include auto_margin_left(10px);
     font-size: 2rem;
     font-weight: 500;
-   @include pad-1199{
+    @include pad-1199 {
       font-size: 1.5rem;
       line-height: 1.33;
     }
@@ -319,7 +368,7 @@
   &.three-items {
     .product-list__item {
       width: calc((100% - 90px) / 3);
-     @include pad-1199{
+      @include pad-1199 {
         width: calc((100% - 60px) / 2);
       }
       @include phone-767 {
@@ -331,7 +380,7 @@
     margin: 0 15px;
     padding: 40px 0 60px 0;
     width: calc((100% - 120px) / 4);
-   @include pad-1199{
+    @include pad-1199 {
       padding: 32px 0 40px 0;
       width: calc((100% - 60px) / 2);
     }
@@ -348,7 +397,7 @@
       @include flex_align;
       font-size: 1.5rem;
       color: var(--gray-900);
-     @include pad-1199{
+      @include pad-1199 {
         line-height: 1.25;
       }
       @include phone-767 {
@@ -457,7 +506,7 @@
     display: block;
     width: 8px;
     background-color: var(--red-700);
-   @include pad-1199{
+    @include pad-1199 {
       @include auto_margin_right(14px);
       width: 4px;
     }
@@ -467,7 +516,7 @@
   @include flex;
   @include flex_align;
   @include auto_margin_top(60px);
- @include pad-1199{
+  @include pad-1199 {
     @include auto_margin_top(40px);
   }
   @include phone-767 {
@@ -478,7 +527,7 @@
     line-height: 1.25;
     white-space: nowrap;
     color: var(--black);
-   @include pad-1199{
+    @include pad-1199 {
       font-size: 1rem;
       line-height: 1.875;
     }
@@ -491,7 +540,7 @@
     box-sizing: border-box;
     border: 1px solid var(--gray-300);
     cursor: pointer;
-   @include pad-1199{
+    @include pad-1199 {
       width: 237px;
     }
     @include phone-767 {
@@ -507,7 +556,7 @@
       &:focus {
         outline: 0;
       }
-     @include pad-1199{
+      @include pad-1199 {
         font-size: 1rem;
       }
     }
@@ -520,7 +569,7 @@
   margin-left: -15px;
   margin-right: -15px;
   margin-bottom: -16px;
- @include pad-1199{
+  @include pad-1199 {
     @include auto_margin_top(14px);
     margin-bottom: -10px;
   }
@@ -533,7 +582,7 @@
   .img-card {
     margin: 16px 15px;
     width: calc((100% - 90px) / 3);
-   @include pad-1199{
+    @include pad-1199 {
       margin: 10px 15px;
       width: calc((100% - 60px) / 2);
     }
@@ -545,7 +594,7 @@
 }
 .img-card {
   &.row-sm {
-   @include pad-1199{
+    @include pad-1199 {
       @include flex;
       @include flex_align;
       .img-card__img {
@@ -573,7 +622,7 @@
     @include bg-img;
     width: 100%;
     height: 224px;
-   @include pad-1199{
+    @include pad-1199 {
       height: 164px;
     }
   }
@@ -583,7 +632,7 @@
     font-weight: bold;
     color: var(--gray-600);
     border: 1px solid #00000020;
-   @include pad-1199{
+    @include pad-1199 {
       padding: 8px 24px;
       font-size: 1rem;
     }
@@ -596,7 +645,7 @@
   text-align: center;
   color: var(--white);
   background-color: var(--black);
- @include pad-1199{
+  @include pad-1199 {
     font-size: 0.875rem;
     line-height: 1.5;
   }
@@ -605,7 +654,7 @@
   padding: 16px 24px;
   border: 1px solid #00000020;
   font-size: 1.25rem;
- @include pad-1199{
+  @include pad-1199 {
     padding: 16px 24px;
   }
   .content-list__item {
@@ -617,7 +666,7 @@
       padding-left: 35px;
       font-size: 1.25rem;
       color: var(--gray-600);
-     @include pad-1199{
+      @include pad-1199 {
         padding-left: 25px;
         font-size: 0.875rem;
       }
@@ -629,7 +678,7 @@
         font-family: 'icomoon';
         font-size: 1.25rem;
         color: var(--gray-600);
-       @include pad-1199{
+        @include pad-1199 {
           font-size: 0.875rem;
         }
       }
@@ -654,7 +703,7 @@
 .shop-location {
   @include flex;
   @include auto_margin_top(32px);
- @include pad-1199{
+  @include pad-1199 {
     flex-direction: column;
   }
   .img-card {
@@ -666,7 +715,7 @@
   .shop-location__map {
     @include auto_margin_left(30px);
     width: 100%;
-   @include pad-1199{
+    @include pad-1199 {
       @include auto_margin_top(32px);
       margin-left: 0;
       min-height: 422px;
@@ -679,7 +728,7 @@
 }
 .question-list {
   @include auto_margin_top(36px);
- @include pad-1199{
+  @include pad-1199 {
     @include auto_margin_top(32px);
   }
   @include phone-767 {
@@ -699,7 +748,7 @@
       @include auto_margin_top(16px);
       padding-left: 95px;
       font-size: 1rem;
-     @include pad-1199{
+      @include pad-1199 {
         padding-left: 59px;
       }
       @include phone-767 {
@@ -729,7 +778,7 @@
   .blog-list__item {
     @include flex;
     @include auto_margin_top(60px);
-   @include pad-1199{
+    @include pad-1199 {
       @include auto_margin_top(24px);
     }
     @include phone-767 {
@@ -743,7 +792,7 @@
       @include bg-img;
       width: 635px;
       height: 400px;
-     @include pad-1199{
+      @include pad-1199 {
         width: 330px;
         height: 208px;
       }
@@ -757,6 +806,9 @@
       @include flex;
       @include flex_justify(space-between);
       flex-direction: column;
+      @include pad-1199 {
+        position: relative;
+      }
       @include phone-767 {
         @include auto_margin_top(8px);
         margin-left: 0;
@@ -765,7 +817,7 @@
         font-size: 2rem;
         line-height: 1.4;
         color: var(--red-800);
-       @include pad-1199{
+        @include pad-1199 {
           font-size: 1.25rem;
           line-height: 1.5;
         }
@@ -783,7 +835,7 @@
         font-weight: 500;
         vertical-align: middle;
         color: var(--black);
-       @include pad-1199{
+        @include pad-1199 {
           font-size: 1rem;
         }
         @include phone-767 {
@@ -793,7 +845,7 @@
         .date {
           display: block;
           font-size: 1rem;
-         @include pad-1199{
+          @include pad-1199 {
             font-size: 0.875rem;
           }
         }
@@ -806,13 +858,20 @@
         -webkit-line-clamp: 8;
         -webkit-box-orient: vertical;
         overflow: hidden;
-       @include pad-1199{
+        @include pad-1199 {
           @include auto_margin_top(32px);
           -webkit-line-clamp: 6;
           font-size: 0.875rem;
         }
         @include phone-767 {
           display: none;
+        }
+      }
+      .text-button {
+        @include pad-1199 {
+          position: absolute;
+          bottom: 0;
+          right: 0;
         }
       }
     }
@@ -827,5 +886,194 @@
   color: var(--red-800);
   &:hover {
     color: var(--light-brown);
+  }
+  &.pad-gray {
+    font-size: 0.875rem;
+    color: var(--gray-500);
+  }
+}
+
+.search-bar {
+  padding: 12px;
+  background-color: var(--red-800);
+  @include pad-1199 {
+    padding: 16px 40px;
+  }
+  @include phone-767 {
+    display: none;
+  }
+  .search-bar__container {
+    @include flex;
+    @include flex_align;
+    @include flex_justify(space-between);
+    margin: 0 auto;
+    width: 1110px;
+    @include pad-1199 {
+      width: 100%;
+    }
+    .search-bar__list {
+      @include flex;
+      @include flex_align;
+      .search-bar__list-item {
+        @include auto_margin_left(48px);
+        @include pad-1199 {
+          @include auto_margin_left(32px);
+        }
+        a {
+          position: relative;
+          font-size: 1.25rem;
+          line-height: 1.2;
+          font-weight: bold;
+          color: var(--white);
+          @include pad-1199 {
+            font-size: 1rem;
+            line-height: 1.5;
+          }
+          &::after {
+            @include ts;
+            position: absolute;
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background-color: var(--white);
+          }
+          &:hover {
+            &::after {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.search-input {
+  @include flex;
+  @include flex_align;
+  &:hover {
+    .search-input__input {
+      @include auto_margin_left(10px);
+      visibility: visible;
+      width: 200px;
+    }
+  }
+  .search-input__icon {
+    font-size: 1.875rem;
+    color: var(--white);
+    cursor: pointer;
+  }
+  .search-input__input {
+    @include ts;
+    height: 25px;
+    visibility: hidden;
+    width: 0;
+  }
+}
+.breadcrumbs {
+  display: inline-flex;
+  .breadcrumbs__item {
+    font-size: 1rem;
+    display: inline-flex;
+    align-items: center;
+    color: var(--black);
+    &.current {
+      color: var(--red-500);
+    }
+  }
+  .breadcrumbs__divider {
+    padding: 0 5px;
+  }
+}
+.tag-title {
+  @include flex_align;
+  display: inline-flex;
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: var(--red-500);
+  @include pad-1199 {
+    font-size: 1.25rem;
+    line-height: 1.3;
+  }
+  .tag-title__icon {
+    margin-right: 8px;
+    font-size: 3rem;
+    @include pad-1199 {
+      font-size: 1.5rem;
+    }
+  }
+}
+.tag-list {
+  @include flex;
+  @include flex_align;
+  flex-wrap: wrap;
+  margin-left: -12px;
+  margin-right: -12px;
+  @include pad-1199 {
+    margin-left: -8px;
+    margin-right: -8px;
+  }
+  @include phone-767 {
+    margin-left: -4px;
+    margin-right: -4px;
+  }
+  &.item-ml-2 {
+    margin-left: -8px;
+    margin-right: -8px;
+    li {
+      margin: 0 8px;
+    }
+    @include phone-767 {
+      margin-left: -2px;
+      margin-right: -2px;
+      li {
+        margin: 0 2px;
+      }
+    }
+  }
+  &.fixed {
+    position: sticky;
+  }
+  li {
+    margin: 0 12px;
+    @include pad-1199 {
+      margin: 0 8px;
+    }
+    @include phone-767 {
+      margin: 0 4px;
+    }
+  }
+  .tag-list__item {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--red-500);
+    @include pad-1199 {
+      font-size: 1rem;
+      line-height: 1.25;
+    }
+  }
+}
+.mt-2 {
+  @include auto_margin_top(8px);
+}
+.blog-content {
+  @include auto_margin_top(24px);
+}
+.blog-image {
+  @include auto_margin_top(40px);
+  width: 100%;
+  @include pad-1199 {
+    @include auto_margin_top(24px);
+  }
+}
+.blog-text {
+  @include auto_margin_top(24px);
+  font-size: 1.25rem;
+  opacity: 0.6;
+  color: var(--gray-700);
+  @include pad-1199 {
+    @include auto_margin_top(16px);
+    font-size: 1rem;
   }
 }
