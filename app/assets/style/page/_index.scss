@@ -44,7 +44,6 @@
     }
   }
 }
-
 .service-specs {
   padding: 60px 0 80px 0;
   background-color: var(--pink-100);
@@ -191,6 +190,153 @@
         }
         @include phone-767 {
           font-size: 36.67px;
+        }
+      }
+    }
+  }
+}
+.branding-designs {
+  padding: 60px 0 80px 0;
+  @include pad-1199 {
+    padding: 40px 39px 56px 39px;
+  }
+  @include phone-767 {
+    padding: 32px 15px 40px 15px;
+  }
+  .branding-design__title {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    color: var(--white);
+    @include pad-1199 {
+      font-size: 2rem;
+    }
+    @include phone-767 {
+      font-size: 1.25rem;
+    }
+  }
+  .branding-list {
+    @include flex;
+    @include flex_align;
+    @include flex_justify(space-between);
+    flex-wrap: wrap;
+    width: 1110px;
+    margin: 40px auto 0 auto;
+    @include pad-1199 {
+      margin-top: 32px;
+      width: 100%;
+    }
+    .branding-list__item {
+      position: relative;
+      width: calc((100% - 30px) / 2);
+      @include phone-767 {
+        @include auto_margin_top(16px);
+        width: 100%;
+      }
+      .branding-list__item-title {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 10;
+        font-size: 4.5rem;
+        font-weight: bold;
+        white-space: nowrap;
+        color: var(--red-500);
+        @include pad-1199 {
+          font-size: 2rem;
+        }
+      }
+      .branding-list__item-bg {
+        @include bg-img;
+        height: 405px;
+        @include pad-1199 {
+          height: 278px;
+        }
+        @include phone-767 {
+          height: 291px;
+        }
+        &.white {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          background-color: var(--white);
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+}
+.customer-list {
+  padding: 60px 0 80px 0;
+  @include pad-1199 {
+    padding: 40px 39px 24px 39px;
+  }
+  @include phone-767 {
+    padding: 32px 15px 24px 15px;
+  }
+  .customer-list__title {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    color: var(--red-800);
+    @include pad-1199 {
+      font-size: 2rem;
+    }
+    @include phone-767 {
+      font-size: 1.25rem;
+    }
+  }
+  .recommend-list {
+    @include flex;
+    @include flex_align;
+    @include flex_justify(space-between);
+    flex-wrap: wrap;
+    width: 1110px;
+    margin: 40px auto 0 auto;
+    @include pad-1199 {
+      margin-top: 32px;
+      width: 100%;
+    }
+    .recommend-card {
+      width: calc((100% - 90px) / 4);
+      box-shadow: 0px 2px 6px #00000029;
+      border: 1px solid #dee2e6;
+      border-radius: 4px;
+      overflow: hidden;
+      @include pad-1199 {
+        margin-bottom: 32px;
+        width: calc((100% - 30px) / 2);
+      }
+      @include phone-767 {
+        margin-bottom: 16px;
+        width: 100%;
+      }
+      .recommend-card__img {
+        @include bg-img;
+        height: 256px;
+      }
+      .recommend-card__content {
+        padding: 16px;
+        height: 204px;
+        box-sizing: border-box;
+        @include phone-767 {
+          padding: 16px 24px;
+        }
+        .recommend-card__name {
+          font-size: 0.875rem;
+          color: var(--gray-600);
+        }
+        .recommend-card__text {
+          @include auto_margin_top(8px);
+          height: 124px;
+          font-size: 1rem;
+          color: var(--gray-600);
+        }
+        .recommend-card__date {
+          font-size: 0.875rem;
+          color: var(--gray-550);
         }
       }
     }
