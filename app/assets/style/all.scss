@@ -1,12 +1,15 @@
-@import 'mixin';
 @import 'reset';
 @import 'variables';
 @import 'grid';
+@import 'mixin';
+@import 'space';
 @import 'base';
+@import 'utilties';
 
 @import 'components';
 
 @import './layout/header';
 @import './layout/footer';
 
-@import 'blog-page';
+@import './page/blog-page';
+@import './page/index';

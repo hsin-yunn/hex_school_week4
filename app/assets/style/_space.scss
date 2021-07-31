@@ -1,0 +1,96 @@
+@for $i from 1 through 200 {
+  .ma-#{$i} {
+    margin: #{$i}px !important;
+  }
+  .mx-#{$i} {
+    margin-left: #{$i}px !important;
+    margin-right: #{$i}px !important;
+  }
+  .my-#{$i} {
+    margin-top: #{$i}px !important;
+    margin-bottom: #{$i}px !important;
+  }
+  .mt-#{$i} {
+    margin-top: #{$i}px !important;
+  }
+  .mb-#{$i} {
+    margin-bottom: #{$i}px !important;
+  }
+  .ml-#{$i} {
+    margin-left: #{$i}px !important;
+  }
+  .mr-#{$i} {
+    margin-right: #{$i}px !important;
+  }
+  .pa-#{$i} {
+    padding: #{$i}px !important;
+  }
+  .px-#{$i} {
+    padding-left: #{$i}px !important;
+    padding-right: #{$i}px !important;
+  }
+  .py-#{$i} {
+    padding-top: #{$i}px !important;
+    padding-bottom: #{$i}px !important;
+  }
+  .pt-#{$i} {
+    padding-top: #{$i}px !important;
+  }
+  .pb-#{$i} {
+    padding-bottom: #{$i}px !important;
+  }
+  .pl-#{$i} {
+    padding-left: #{$i}px !important;
+  }
+  .pr-#{$i} {
+    padding-right: #{$i}px !important;
+  }
+}
+
+// Mobile
+@for $i from 0 through 87 {
+  @include phone-767 {
+    .sm-ma-#{$i} {
+      margin: #{$i}px !important;
+    }
+    .sm-mx-#{$i} {
+      margin: 0 #{$i}px !important;
+    }
+    .sm-my-#{$i} {
+      margin: #{$i}px 0 !important;
+    }
+    .sm-mt-#{$i} {
+      margin-top: #{$i}px !important;
+    }
+    .sm-mb-#{$i} {
+      margin-bottom: #{$i}px !important;
+    }
+    .sm-ml-#{$i} {
+      margin-left: #{$i}px !important;
+    }
+    .sm-mr-#{$i} {
+      margin-right: #{$i}px !important;
+    }
+    .sm-pa-#{$i} {
+      padding: #{$i}px !important;
+    }
+    .sm-px-#{$i} {
+      padding: 0 #{$i}px !important;
+    }
+    .sm-py-#{$i} {
+      padding: #{$i}px 0 !important;
+    }
+    .sm-pt-#{$i} {
+      padding-top: #{$i}px !important;
+    }
+    .sm-pb-#{$i} {
+      padding-bottom: #{$i}px !important;
+    }
+    .sm-pl-#{$i} {
+      padding-left: #{$i}px !important;
+    }
+    .sm-pr-#{$i} {
+      padding-right: #{$i}px !important;
+    }
+  }
+}

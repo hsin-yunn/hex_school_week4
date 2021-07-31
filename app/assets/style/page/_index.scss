@@ -1,0 +1,198 @@
+.full-banner {
+  @include flex_center;
+  @include bg-img;
+  height: 840px;
+  background-image: url('/assets/images/banner.png');
+  @include pad-1199 {
+    background-image: url('/assets/images/banner-sm.png');
+  }
+  @include phone-767 {
+    height: 394px;
+  }
+  .full-banner__title-wrap {
+    width: 1110px;
+    @include pad-1199 {
+      width: calc(100% - 79px);
+    }
+    @include phone-767 {
+      width: calc(100% - 30px);
+    }
+  }
+  .full-banner__subtitle {
+    font-size: 2.25rem;
+    text-align: right;
+    color: var(--red-800);
+    @include pad-1199 {
+      font-size: 1.25rem;
+    }
+    @include phone-767 {
+      font-size: 1rem;
+      line-height: 22px;
+    }
+  }
+  .full-banner__title {
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: right;
+    color: var(--red-800);
+    @include pad-1199 {
+      font-size: 3rem;
+    }
+    @include phone-767 {
+      font-size: 2rem;
+      line-height: 45px;
+    }
+  }
+}
+
+.service-specs {
+  padding: 60px 0 80px 0;
+  background-color: var(--pink-100);
+  @include pad-1199 {
+    padding: 40px 76px 24px 76px;
+  }
+  @include phone-767 {
+    padding: 32px 60px 8px 60px;
+  }
+
+  .service-specs__title {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    color: var(--red-800);
+    @include pad-1199 {
+      font-size: 2rem;
+    }
+    @include phone-767 {
+      font-size: 1.5rem;
+    }
+  }
+  .service-list {
+    @include flex;
+    @include flex_justify(space-between);
+    flex-wrap: wrap;
+    width: 1110px;
+    margin: 40px auto 0 auto;
+    @include pad-1199 {
+      width: 100%;
+    }
+  }
+  .service-list__item {
+    @include flex;
+    @include flex_align;
+    flex-direction: column;
+    width: calc((100% - 90px) / 4);
+    @include pad-1199 {
+      width: calc((100% - 105px) / 2);
+      padding-bottom: 32px;
+    }
+    @include phone-767 {
+      width: 100%;
+      padding-bottom: 32px;
+    }
+    .service-list__item-icon {
+      font-size: 83.83px;
+      color: var(--red-800);
+    }
+    .service-list__item-title {
+      @include auto_margin_top(16px);
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: var(--red-800);
+    }
+    .service-list__item-text {
+      @include auto_margin_top(8px);
+      font-size: 1rem;
+      color: var(--black);
+    }
+  }
+}
+.product-types {
+  padding: 60px 0 80px 0;
+  @include pad-1199 {
+    padding: 40px 39px 56px 39px;
+  }
+  @include phone-767 {
+    padding: 32px 15px 40px 15px;
+  }
+  .product-types__title {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    color: var(--red-800);
+    @include pad-1199 {
+      font-size: 2rem;
+    }
+    @include phone-767 {
+      font-size: 1.25rem;
+    }
+  }
+  .product-type__list {
+    width: 1110px;
+    margin: 40px auto 0 auto;
+    @include pad-1199 {
+      width: 100%;
+    }
+    @include phone-767 {
+      margin-top: 20px;
+    }
+  }
+  .product-type__list-item {
+    @include auto_margin_top(32px);
+    @include phone-767 {
+      @include auto_margin_top(8px);
+    }
+    a {
+      @include flex;
+      @include flex_align;
+      position: relative;
+      &.reverse {
+        flex-direction: row-reverse;
+        @include pad-1199 {
+          flex-direction: row;
+        }
+      }
+    }
+    .product-type__list-item__img {
+      width: 635px;
+      @include pad-1199 {
+        width: 390px;
+      }
+      @include phone-767 {
+        width: 100%;
+      }
+    }
+    .product-type__list-item__title {
+      @include flex;
+      @include flex_align;
+      margin-left: 30px;
+      font-size: 3rem;
+      font-weight: bold;
+      font-style: italic;
+      color: var(--red-500);
+      &.reverse {
+        margin-right: 30px;
+      }
+      @include pad-1199 {
+        font-size: 1.875rem;
+      }
+      @include phone-767 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: 0;
+      }
+      .title-icon {
+        margin-right: 10px;
+        font-size: 44px;
+        @include pad-1199 {
+          font-size: 33px;
+        }
+        @include phone-767 {
+          font-size: 36.67px;
+        }
+      }
+    }
+  }
+}

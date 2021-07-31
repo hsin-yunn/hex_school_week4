@@ -1,43 +1,3 @@
-.container {
-  margin: 0 auto;
-  max-width: 1100px;
-  @include phone-767 {
-    padding: 0 15px;
-  }
-}
-.main {
-  margin: 0 auto;
-  padding: 80px 0 160px 0;
-  max-width: 1110px;
-  min-height: 40vh;
-  @include pad-1199 {
-    max-width: 100%;
-    padding: 56px 39px;
-  }
-  @include phone-767 {
-    padding: 32px 15px 24px 15px;
-  }
-  &.location {
-    padding: 96px 0 160px 0;
-    @include pad-1199 {
-      max-width: 100%;
-      padding: 60px 30px 96px 39px;
-    }
-    @include phone-767 {
-      padding: 28px 15px 56px 15px;
-    }
-  }
-  &.blog {
-    padding: 40px 0 160px 0;
-    @include pad-1199 {
-      max-width: 100%;
-      padding: 60px 30px 96px 39px;
-    }
-    @include phone-767 {
-      padding: 28px 15px 56px 15px;
-    }
-  }
-}
 .icon-list {
   @include flex;
   @include flex_align;
@@ -761,7 +721,6 @@
     color: var(--gray-500);
   }
 }
-
 .search-bar {
   padding: 12px;
   background-color: var(--red-800);
@@ -829,7 +788,6 @@
     }
   }
 }
-
 .search-input {
   @include flex;
   @include flex_align;
@@ -937,13 +895,5 @@
       font-size: 1rem;
       line-height: 1.25;
     }
-  }
-}
-.mt-2 {
-  @include auto_margin_top(8px);
-}
-.phone-hide {
-  @include phone-767 {
-    display: none;
   }
 }

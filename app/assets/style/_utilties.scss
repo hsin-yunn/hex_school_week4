@@ -1,0 +1,10 @@
+//通用類別、工具..
+
+.phone-hide {
+  @include phone-767 {
+    display: none;
+  }
+}
+.mt-2 {
+  @include auto_margin_top(8px);
+}
