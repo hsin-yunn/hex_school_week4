@@ -13296,7 +13296,7 @@ img {
   background-size: cover;
   background-repeat: no-repeat;
   height: 840px;
-  background-image: url("/app/assets/images/banner.png"); }
+  background-image: url("/assets/images/banner.png"); }
   @media screen and (max-width: 1199px) {
     .full-banner {
       background-image: url("/app/assets/images/banner-sm.png"); } }
