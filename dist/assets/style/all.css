@@ -13296,10 +13296,10 @@ img {
   background-size: cover;
   background-repeat: no-repeat;
   height: 840px;
-  background-image: url("/assets/images/banner.png"); }
+  background-image: url("assets/images/banner.png"); }
   @media screen and (max-width: 1199px) {
     .full-banner {
-      background-image: url("/assets/images/banner-sm.png"); } }
+      background-image: url("assets/images/banner-sm.png"); } }
   @media screen and (max-width: 767px) {
     .full-banner {
       height: 394px; } }

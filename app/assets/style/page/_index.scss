@@ -2,9 +2,9 @@
   @include flex_center;
   @include bg-img;
   height: 840px;
-  background-image: url('/assets/images/banner.png');
+  background-image: url('assets/images/banner.png');
   @include pad-1199 {
-    background-image: url('/assets/images/banner-sm.png');
+    background-image: url('assets/images/banner-sm.png');
   }
   @include phone-767 {
     height: 394px;
